@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Neodigm | PWA</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport"    content="initial-scale=1, maximum-scale=2, minimum-scale=1, width=device-width, height=device-height"/>
+        <meta name="description" content="">
+        <meta name="keywords"    content="">
+        <meta name="author"      content="Scott C. Krause">
+
+        <link rel="preconnect" href="https://arcanus55.github.io">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://arcanus55.github.io/neodigm55/dist/neodigm55_v2_3.css"></link>
+        <script src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v2_3.js"></script>
+        <link rel="stylesheet" href="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_0_launchComplete.css"></link>
+        <script src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_0_launchComplete.js"></script>
+
+        <link rel="manifest" href="/manifest.json">
+        <script>
+            if ("serviceWorker" in navigator) {
+                window.addEventListener("load", () => {
+                    navigator.serviceWorker.register("/sw.js");
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <main id="a11y-skipmain" role="main">
+            <section>
+                <article>
+                    <p class="lgo h-center"><span>Sample</span> <span>PWA</span></p>
+                    <h1 class="hd1 h-center">Progressive Web App</h1>
+                    <p class="txt-readable prg h-center">If your are seeing this text while offline then this HTML document was served by a PWA. The Service Worker is using Google Workbox 6.x to manage the caching strategy.</p>
+                </article>                
+            </section>
+        </main>
+    </body>
+</html>
