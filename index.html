@@ -22,6 +22,20 @@
         <script src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_0_launchComplete.js"></script>
 
         <link rel="manifest" href="manifest.json">
+
+<script>
+    // This is the GET CORS issue
+fetch("https://45nasjo9v6.execute-api.us-west-2.amazonaws.com/dev2/requests",
+{
+    QQQbody: formData,
+    method: "get",
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      }
+})
+</script>
+
         <script>
             if ("serviceWorker" in navigator) {
                 window.addEventListener("load", () => {
