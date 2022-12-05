@@ -170,7 +170,174 @@ data-n55-toast="Generate Real-time|SFDC Remoting Data"
                                     <div>
                                         <article>
                                             <h2 class="hd4">Card Metadata</h2>
-                                            <textarea id="l-term-cards" class="l-term" rows=24></textarea>
+                                            <textarea id="l-term-cards" class="l-term" rows=24>
+<pre>
+{
+  "Id": "Rheum-Rep-19-AI2",
+  "Unique_Upsert_Key_Newgen_abv__c": "Rheum-Rep-19-AI2",
+  "cardColumn": 12,
+  "callType": "SFDC",
+  "methodName": "getLevel2CardData",
+  "MetricName": "Top Physicians by RINVOQ TRx Volume",
+  "BP_MetricsName": "Top Physicians by RINVOQ TRx Volume",
+  "subtitle": "#TimeFrequency# - #TimePeriod# (Curr: #CurrentPeriod# Prev: #PreviousPeriod#)",
+  "breadcrumbs": {
+    "indicator": "Indication: #indication# ; ",
+    "segment": "#segment#",
+    "segmentValue": ": #segmentValue#"
+  },
+  "height": "400px",
+  "Time_Period__c": "All Time Period",
+  "parentResponseURLIndex": 0,
+  "hasMultiURLs": true,
+  "component": "sypher-data-table",
+  "tableType": "multiColumnMergeTable",
+  "indexFields": [
+    "physician",
+    "physician",
+    "physician",
+    "physician"
+  ],
+  "metricStructure": {
+    "columnStructure": {
+      "name": "",
+      "id": "",
+      "qtdCallDelivered": "",
+      "trxVolume": "",
+      "trxVolumeChange": "",
+      "trxVolumeChangePct": "",
+      "marketVolume": "",
+      "marketShare": "",
+      "marketShareChange": ""
+    },
+    "metricFields": {
+      "name": "name",
+      "id": "id",
+      "qtdCallDelivered": "metrics-DELIVERED_CALLS",
+      "trxVolume": "metrics-TRX_VOL_PROD",
+      "trxVolumeChange": "metrics-TRX_VOL_PROD_ABS_CNG",
+      "trxVolumeChangePct": "metrics-TRX_VOL_PROD_CNG_PCT",
+      "marketVolume": "metrics-TRX_VOL_MKT",
+      "marketShare": "metrics-TRX_SHARE_PCT",
+      "marketShareChange": "metrics-TRX_SHARE_CNG_PCT"
+    },
+    "groupingFields": "id",
+    "columnResponseIndex": {
+      "0": [
+        "name",
+        "id",
+        "trxVolume",
+        "trxVolumeChange",
+        "trxVolumeChangePct"
+      ],
+      "1": [
+        "name",
+        "id",
+        "marketVolume"
+      ],
+      "2": [
+        "name",
+        "id",
+        "marketShare",
+        "marketShareChange"
+      ],
+      "3": [
+        "name",
+        "id",
+        "qtdCallDelivered"
+      ]
+    }
+  },
+  "sortingOption": {
+    "enable": true,
+    "customSortColumn": [
+      4,
+      "desc"
+    ]
+  },
+  "exportColumns": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "tabBars": [],
+  "columns": [
+    {
+      "title": "&nbsp",
+      "data": "",
+      "className": "no-border-right text-left pl-0",
+      "renderIcon": "icon-medical-person",
+      "formatType": "icon",
+      "width": 1,
+      "sortable": false
+    },
+    {
+      "title": "Physician Name",
+      "data": "name",
+      "width": 150,
+      "className": "text-left pl-1",
+      "formatType": "link"
+    },
+    {
+      "title": "Customer ID",
+      "data": "id",
+      "width": 70,
+      "formatType": "string"
+    },
+    {
+      "title": "QTD Calls Delivered",
+      "data": "qtdCallDelivered",
+      "width": 60
+    },
+    {
+      "title": "RINVOQ TRx Volume",
+      "data": "trxVolume",
+      "width": 60
+    },
+    {
+      "title": "RINVOQ TRx Volume Change",
+      "data": "trxVolumeChange",
+      "formatType": "icon-calculate",
+      "type": "num",
+      "showPercentage": false,
+      "width": 90
+    },
+    {
+      "title": "RINVOQ TRx Volume % Change",
+      "data": "trxVolumeChangePct",
+      "type": "num",
+      "formatType": "icon-calculate",
+      "width": 90
+    },
+    {
+      "title": "Bio + Oral Market TRx Volume",
+      "data": "marketVolume",
+      "width": 90
+    },
+    {
+      "title": "Bio + Oral Market TRx Share",
+      "data": "marketShare",
+      "type": "num",
+      "formatType": "percentage",
+      "width": 90
+    },
+    {
+      "title": "Bio + Oral Market TRx Share Change",
+      "data": "marketShareChange",
+      "type": "num",
+      "formatType": "icon-calculate",
+      "width": 90
+    }
+  ]
+}
+</pre>
+                                            </textarea>
                                         </article>
                                     </div>
                                     <nav class="h-center" style="background-color: #efefef; border-radius: 12px; padding: 8px;">
