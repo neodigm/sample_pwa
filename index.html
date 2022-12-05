@@ -45,15 +45,30 @@ fetch("https://45nasjo9v6.execute-api.us-west-2.amazonaws.com/dev4/requests",
             }
         </script>
     </head>
-    <body>
+    <body data-search-param="false">
         <main id="a11y-skipmain" role="main">
-            <section>
+            <section data-search-param-disp="false">
                 <article>
                     <p class="lgo h-center"><span>Sample</span> <span>PWA</span></p>
                     <h1 class="hd1 h-center">Progressive Web App</h1>
                     <p class="txt-readable prg h-center">If your are seeing this text while offline then this HTML document was served by a PWA. The Service Worker is using Google Workbox 6.x to manage the caching strategy.</p>
+                </article>
+            </section>
+            <section data-search-param-disp="true">
+                <article>
+                    <p class="lgo h-center"><span>Sypher</span> <span>Agent</span></p>
+                    <h2 class="hd1 h-center">Optimized Cache Proxy</h2>
                 </article>                
             </section>
         </main>
     </body>
+    <style>
+        body[data-search-param="true"]  [data-search-param-disp="true"]  { display: block }
+        body[data-search-param="true"]  [data-search-param-disp="false"] { display: none }
+        body[data-search-param="false"] [data-search-param-disp="false"] { display: block }
+        body[data-search-param="false"] [data-search-param-disp="true"]  { display: none }
+    </style>
+    <script>
+        document.body.dataset.searchParam = (document.location.href.indexOf("key") != -1) ? "true" : "false"
+    </script>
 </html>
