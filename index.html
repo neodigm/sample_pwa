@@ -25,7 +25,12 @@
 
 <script>
     // This is the GET CORS issue --
-    
+function fetchRequests( sURI = "https://45nasjo9v6.execute-api.us-west-2.amazonaws.com/dev4/requests"){
+    const elTermReq = document.getElementById( "l-term-request" )
+    if( sURI && elTermReq ){
+        elTermReq.innerHTML = "lkasjdflkjasdkljf"
+    }
+}
 fetch("https://45nasjo9v6.execute-api.us-west-2.amazonaws.com/dev4/requests",
 {
     QQQbody: "formData",
@@ -113,15 +118,23 @@ data-n55-toast="Generate Real-time|SFDC Remoting Data"
                                 <section class="pfmf-grid pfmf-grid__80_20">
                                     <div>
                                         <article>
-                                            <h2 class="hd2">Time is Fleeting</h2>
-                                            <p class="txt-readable prg">This real-time graph proves that the interest in Google GA4 conversion services is rapidly increasing. The demand for GA4 upgrade know-how is only going up. If you are an agency with the urgent need to provide skilled GA4 conversion expertise, consider white labeling our migration services. Act now!</p>
+                                            <h2 class="hd4">Real-time User Templates</h2>
+                                            <textarea id="l-term-request" class="l-term" rows=24></textarea>
                                         </article>
                                     </div>
                                     <nav class="h-center" style="background-color: #efefef; border-radius: 12px; padding: 8px;">
+                                        <br><br>
                                         <a id="js-subnav-request-refresh" href="#"
+                                        onclick="fetchRequests()"
                                         data-n55-enchanted-cta data-n55-enchanted-cta-dont-touch="true" data-n55-enchanted-cta-shape-off="true" data-n55-enchanted-cta-hover-an="true" data-n55-enchanted-cta-size="xsmall" data-n55-theme="night"
                                         data-n55-toast="Getting New|Data"
                                         ><span data-n55-wired4sound-mouseover="3">Refresh</span><span>Get New</span>
+                                        </a>
+                                        <br>
+                                        <a id="js-subnav-request-search" href="#"
+                                        data-n55-enchanted-cta data-n55-enchanted-cta-dont-touch="true" data-n55-enchanted-cta-shape-off="true" data-n55-enchanted-cta-hover-an="true" data-n55-enchanted-cta-size="xsmall" data-n55-theme="night"
+                                        data-n55-toast="Search|Find by Criteria"
+                                        ><span data-n55-wired4sound-mouseover="3">Search</span><span>Find by Critera</span>
                                         </a>
                                         <br>
                                         <a id="js-subnav-request-create" href="#"
@@ -136,6 +149,12 @@ data-n55-toast="Generate Real-time|SFDC Remoting Data"
                                         ><span data-n55-wired4sound-mouseover="3">Export</span><span>Save As JSON</span>
                                         </a>
                                         <br>
+                                        <a id="js-subnav-request-schedule" href="#"
+                                        data-n55-enchanted-cta data-n55-enchanted-cta-dont-touch="true" data-n55-enchanted-cta-shape-off="true" data-n55-enchanted-cta-hover-an="true" data-n55-enchanted-cta-size="xsmall" data-n55-theme="night"
+                                        data-n55-toast="View or Set|Schedule"
+                                        ><span data-n55-wired4sound-mouseover="3">Schedule</span><span>Crontab Exec</span>
+                                        </a>
+                                        <br>
                                         <a id="js-subnav-request-clear" href="#"
                                         data-n55-enchanted-cta data-n55-enchanted-cta-dont-touch="true" data-n55-enchanted-cta-shape-off="true" data-n55-enchanted-cta-hover-an="true" data-n55-enchanted-cta-size="xsmall" data-n55-flash-theme="danger" data-n55-theme="danger"
                                         data-n55-toast="Clear Entire|Table"
@@ -147,9 +166,53 @@ data-n55-toast="Generate Real-time|SFDC Remoting Data"
                             <section>
                                 <h6 class="hd1 h-center" style="font-size: 32px;">Card Definitions - Card Templates</h6>
                                 <hr>
-                                <a data-n55-carousel-nav='{"id": "js-caro-aspa", "nav": "next"}'>next</a>
-                                <a data-n55-carousel-nav='{"id": "js-caro-aspa", "nav": 2.4}'>2.4</a>
-                                <a data-n55-carousel-nav='{"id": "js-caro-aspa", "nav": "prev"}'>prev</a>
+                                <section class="pfmf-grid pfmf-grid__80_20">
+                                    <div>
+                                        <article>
+                                            <h2 class="hd4">Card Metadata</h2>
+                                            <textarea id="l-term-cards" class="l-term" rows=24></textarea>
+                                        </article>
+                                    </div>
+                                    <nav class="h-center" style="background-color: #efefef; border-radius: 12px; padding: 8px;">
+                                        <br><br>
+                                        <a id="js-subnav-cards-refresh" href="#"
+                                        onclick=""
+                                        data-n55-enchanted-cta data-n55-enchanted-cta-dont-touch="true" data-n55-enchanted-cta-shape-off="true" data-n55-enchanted-cta-hover-an="true" data-n55-enchanted-cta-size="xsmall" data-n55-theme="night"
+                                        data-n55-toast="Getting New|Data"
+                                        ><span data-n55-wired4sound-mouseover="3">Refresh</span><span>Get New</span>
+                                        </a>
+                                        <br>
+                                        <a id="js-subnav-cards-search" href="#"
+                                        data-n55-enchanted-cta data-n55-enchanted-cta-dont-touch="true" data-n55-enchanted-cta-shape-off="true" data-n55-enchanted-cta-hover-an="true" data-n55-enchanted-cta-size="xsmall" data-n55-theme="night"
+                                        data-n55-toast="Search|Find by Criteria"
+                                        ><span data-n55-wired4sound-mouseover="3">Search</span><span>Find by Critera</span>
+                                        </a>
+                                        <br>
+                                        <a id="js-subnav-cards-create" href="#"
+                                        data-n55-enchanted-cta data-n55-enchanted-cta-dont-touch="true" data-n55-enchanted-cta-shape-off="true" data-n55-enchanted-cta-hover-an="true" data-n55-enchanted-cta-size="xsmall" data-n55-theme="night"
+                                        data-n55-toast="Create New|card meta"
+                                        ><span data-n55-wired4sound-mouseover="3">Create</span><span>Post New</span>
+                                        </a>
+                                        <br>
+                                        <a id="js-subnav-cards-export" href="#"
+                                        data-n55-enchanted-cta data-n55-enchanted-cta-dont-touch="true" data-n55-enchanted-cta-shape-off="true" data-n55-enchanted-cta-hover-an="true" data-n55-enchanted-cta-size="xsmall" data-n55-theme="night"
+                                        data-n55-toast="Export|Save as JSON"
+                                        ><span data-n55-wired4sound-mouseover="3">Export</span><span>Save As JSON</span>
+                                        </a>
+                                        <br>
+                                        <a id="js-subnav-cards-schedule" href="#"
+                                        data-n55-enchanted-cta data-n55-enchanted-cta-dont-touch="true" data-n55-enchanted-cta-shape-off="true" data-n55-enchanted-cta-hover-an="true" data-n55-enchanted-cta-size="xsmall" data-n55-theme="night"
+                                        data-n55-toast="View or Set|Schedule"
+                                        ><span data-n55-wired4sound-mouseover="3">Schedule</span><span>Crontab Exec</span>
+                                        </a>
+                                        <br>
+                                        <a id="js-subnav-cards-clear" href="#"
+                                        data-n55-enchanted-cta data-n55-enchanted-cta-dont-touch="true" data-n55-enchanted-cta-shape-off="true" data-n55-enchanted-cta-hover-an="true" data-n55-enchanted-cta-size="xsmall" data-n55-flash-theme="danger" data-n55-theme="danger"
+                                        data-n55-toast="Clear Entire|Table"
+                                        ><span data-n55-wired4sound-mouseover="3">Clear</span><span>Remove All</span>
+                                        </a>
+                                    </nav>
+                                </section>
                             </section>
                             <section>
                                 <h6 class="hd1 h-center" style="font-size: 32px;">Territories - Reps Roles</h6>
@@ -182,9 +245,11 @@ data-n55-toast="Generate Real-time|SFDC Remoting Data"
         body[data-search-param="true"]  [data-search-param-disp="false"] { display: none }
         body[data-search-param="false"] [data-search-param-disp="false"] { display: block }
         body[data-search-param="false"] [data-search-param-disp="true"]  { display: none }
+        .l-term {background-color: #000; color: #fff;width: 100%;border-radius: 12px; font-size: 10px;}
     </style>
     <script>
-        if( neodigmWired4Sound ) neodigmWired4Sound.setVolume( .02 )
+        if( neodigmWired4Sound ) neodigmWired4Sound.setVolume( .04 )
+        // key logic
         document.body.dataset.searchParam = (document.location.href.indexOf("key") != -1) ? "true" : "false"
     </script>
 </html>
