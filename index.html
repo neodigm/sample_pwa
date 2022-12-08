@@ -38,7 +38,15 @@ function clearRequests(){
     const elTermReq = document.getElementById( "l-term-request" )
     if( elTermReq ){ elTermReq.innerHTML = "" }
 }
-
+function fetchPage( sDir = "next", sURI = "https://45nasjo9v6.execute-api.us-west-2.amazonaws.com/dev4/requests"){
+  const elTermReq = document.getElementById( "l-term-page" )
+    if( sURI && elTermReq ){
+        fetch( sURI ).then( result => result.json() ).then(( res ) => { 
+            console.log( " ``` ``` ||| " + typeof res, res)
+            elTermReq.innerHTML = JSON.stringify( res )
+        }) 
+    }
+}
 </script>
 
         <script>
@@ -388,7 +396,7 @@ data-n55-toast="Generate Real-time|SFDC Remoting Data"
                                     <div>
                                         <article>
                                             <h2 class="hd4">Real-time Compressed</h2>
-                                            <textarea id="l-term-territory" class="l-term" rows=24></textarea>
+                                            <textarea id="l-term-page" class="l-term" rows=24></textarea>
                                         </article>
                                     </div>
                                     <nav class="h-center" style="background-color: #efefef; border-radius: 12px; padding: 8px;">
