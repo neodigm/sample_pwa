@@ -414,51 +414,54 @@ https://abbvsyprprxyagent.s3.us-west-2.amazonaws.com/sypher_lzw_ltd_1061.json?re
 
 <template id="js-srr-import-form-id" data-n55-sodapop-modal="true" data-n55-sodapop-size="small" data-n55-sodapop-fullscreen="false">
     <form id="upload-id">
-    <QQQQlabel for="file">File to upload</QQQQlabel>
     <input id="file-id" type="file" accept=".json">
     <button>Upload</button>
     </form>
+    <br>
+    <nav class="h-center">
+      <a id="js-subnav-cards-search" href="#"
+      onclick="neodigmSodaPop.close()"
+      data-n55-enchanted-cta data-n55-enchanted-cta-dont-touch="true" data-n55-enchanted-cta-shape-off="true" data-n55-enchanted-cta-hover-an="true" data-n55-enchanted-cta-size="xsmall" data-n55-theme="night"
+      ><span data-n55-wired4sound-mouseover="3">Close</span><span>Exit Form</span>
+      </a>     
+    </nav>
 </template>
 <script>
 
 const ASOPAURI = "https://45nasjo9v6.execute-api.us-west-2.amazonaws.com/dev4/requests"
-
-//window.addEventListener('DOMContentLoaded', ( ev ) => {
-    setTimeout(function(){
-        if( neodigmSodaPop && neodigmMarquee ) neodigmSodaPop.setOnAfterOpen( function(){
-            neodigmMetronome.init()
-            neodigmMarquee.init()
-            let elForm = document.querySelector('#upload-id');
-            let elInput = document.querySelector('#file-id');
-            if( elForm && elInput ){
-              elForm.addEventListener('submit', function( ev ){
-                let oReader = new FileReader()
-                ev.preventDefault()
-                if( !elInput.value.length ) return
-                oReader.onload = function( aF ){
-                  let jFContents = event.target.result
-                  jFContents = JSON.parse( jFContents )
-console.log( " ~~~ ~~~ ", typeof jFContents, jFContents[0])
-                  neodigmToast.q( jFContents.length +  " sypher remoting requests|in JSON file", "primary")
-                  jFContents.forEach( function( aRq ){
-                    console.log( " ~~ | " + aRq[0] )
-                  })
-                  fFetchTick( jFContents, 0 )
-                }
-	              oReader.readAsText( elInput.files[0] )
-            } )
+setTimeout(function(){ // on soda open bind to file upload form and aync proccess json
+    if( neodigmSodaPop && neodigmMarquee ) neodigmSodaPop.setOnAfterOpen( function(){
+        neodigmMetronome.init()
+        neodigmMarquee.init()
+        let elForm = document.querySelector('#upload-id');
+        let elInput = document.querySelector('#file-id');
+        if( elForm && elInput ){
+          elForm.addEventListener('submit', function( ev ){
+            let oReader = new FileReader()
+            ev.preventDefault()
+            if( !elInput.value.length ) return
+            oReader.onload = function( aF ){
+              let jFContents = event.target.result
+              jFContents = JSON.parse( jFContents )
+              neodigmToast.q( jFContents.length +  " sypher remoting requests|in JSON file", "primary")
+              jFContents.forEach( function( aRq ){
+                console.log( " ~~ | " + aRq[0] )
+              })
+              fFetchTick( jFContents, 0 )
             }
-        }, "js-srr-import-form-id")            
-    }, 2400)
+            oReader.readAsText( elInput.files[0] )
+        } )
+        }
+    }, "js-srr-import-form-id")            
+}, 1800)
+
 let fFetchTick = function( aSRR, nCnt ){
   if( aSRR[ nCnt ]){
     fetch( ASOPAURI, {"method": "POST", headers: {'Content-Type': 'application/json'}, "body": JSON.stringify( { "key": aSRR[ nCnt ][0], "value": aSRR[ nCnt ][1]} ) } ).then((data) => {
-      console.log( " @@@ | " , data);
       fFetchTick( aSRR, ++nCnt)
     });
   }
 }
-//});  // Note the DEFAULT function will also fire (after this function)
 </script>
 
 
