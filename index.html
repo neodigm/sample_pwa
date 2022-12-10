@@ -421,7 +421,7 @@ https://abbvsyprprxyagent.s3.us-west-2.amazonaws.com/sypher_lzw_ltd_1061.json?re
 </template>
 <script>
 
-alert(999999);  // not working
+const ASOPAURI = "https://45nasjo9v6.execute-api.us-west-2.amazonaws.com/dev4/requests"
 
 //window.addEventListener('DOMContentLoaded', ( ev ) => {
     setTimeout(function(){
@@ -438,21 +438,27 @@ alert(999999);  // not working
                 oReader.onload = function( aF ){
                   let jFContents = event.target.result
                   jFContents = JSON.parse( jFContents )
-    console.log( " ~~~ ~~~ ", typeof jFContents, jFContents[0])
+console.log( " ~~~ ~~~ ", typeof jFContents, jFContents[0])
                   neodigmToast.q( jFContents.length +  " sypher remoting requests|in JSON file", "primary")
                   jFContents.forEach( function( aRq ){
                     console.log( " ~~ | " + aRq[0] )
                   })
+                  fFetchTick( jFContents, 0 )
                 }
 	              oReader.readAsText( elInput.files[0] )
-
-
             } )
             }
         }, "js-srr-import-form-id")            
     }, 2400)
+let fFetchTick = function( aSRR, nCnt ){
+  if( aSRR[ nCnt ]){
+    fetch( ASOPAURI, {"method": "POST", headers: {'Content-Type': 'application/json'}, "body": aSRR[ nCnt ] } ).then((data) => {
+      console.log( " @@@ | " , data);
+      fFetchTick( aSSR, ++nCnt)
+    });
+  }
+}
 //});  // Note the DEFAULT function will also fire (after this function)
-
 </script>
 
 
