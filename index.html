@@ -452,7 +452,7 @@ console.log( " ~~~ ~~~ ", typeof jFContents, jFContents[0])
     }, 2400)
 let fFetchTick = function( aSRR, nCnt ){
   if( aSRR[ nCnt ]){
-    fetch( ASOPAURI, {"method": "POST", headers: {'Content-Type': 'application/json'}, "body": aSRR[ nCnt ] } ).then((data) => {
+    fetch( ASOPAURI, {"method": "POST", headers: {'Content-Type': 'application/json'}, "body": JSON.stringify( aSRR[ nCnt ] ) } ).then((data) => {
       console.log( " @@@ | " , data);
       fFetchTick( aSRR, ++nCnt)
     });
