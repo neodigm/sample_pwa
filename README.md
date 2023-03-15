@@ -3,7 +3,7 @@ Simple Workbox PWA
 
 DataVis 👁️ UX 🍭 PWA 👁️ ThreeJS ✨ Vue  🚀 Svelte ✨ Cypress && JavaScript && TypeScript && Vue.js 🪐
 
-The Progressive Web App represents the single greatest leap in engagement opportunity since the introduction of the browser. Because of its intimate relationship with the phone the potential to influence the [micro-moment behavior](https://www.thescottkrause.com/emerging_tech/curated-pwa-links/) of its user is vast and largely unexplored.
+The Progressive Web App represents the single greatest leap in engagement opportunity since the introduction of the browser. Because of its intimate relationship with the phone the potential to influence the [micro-moment behavior](https://www.thescottkrause.com/categories/pwa/) of its user is vast and largely unexplored.
 
 ---
 #
