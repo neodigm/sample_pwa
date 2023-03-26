@@ -5,6 +5,8 @@ DataVis 👁️ UX 🍭 PWA 👁️ ThreeJS ✨ Vue  🚀 Svelte ✨ Cypress && 
 
 The Progressive Web App represents the single greatest leap in engagement opportunity since the introduction of the browser. Because of its intimate relationship with the phone the potential to influence the [micro-moment behavior](https://www.thescottkrause.com/categories/pwa/) of its user is vast and largely unexplored.
 
+Expanding what the web can do with features like file system access, media controls, app badging, [WASM](https://www.thescottkrause.com/emerging_tech/curated-wasm-links/) and full clipboard support. All of these capabilities are built with the web's secure, user-centric permission model, ensuring that going to a website is never a scary proposition for users.
+
 ---
 #
 [Portfolio Blog](https://www.theScottKrause.com) |
