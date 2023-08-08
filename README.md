@@ -2,6 +2,7 @@
 Simple Workbox PWA
 
 DataVis 👁️ UX 🍭 PWA 👁️ ThreeJS ✨ Vue  🚀 Svelte ✨ Cypress && JavaScript && TypeScript && Vue.js 🪐
+Infographics UX PWA Typescript Svelte ThreeJS Vue ✨htmlx
 
 The Progressive Web App represents the single greatest leap in engagement opportunity since the introduction of the browser. Because of its intimate relationship with the phone the potential to influence the [micro-moment behavior](https://www.thescottkrause.com/categories/pwa/) of its user is vast and largely unexplored.
 
@@ -10,9 +11,10 @@ Expanding what the web can do with features like file system access, media contr
 ---
 #
 [Portfolio Blog](https://www.theScottKrause.com) |
-[🦄 Résumé](https://thescottkrause.com/Arcanus_Scott_C_Krause_2023.pdf) |
+[🌶️ Résumé](https://thescottkrause.com/Arcanus_Scott_C_Krause_2023.pdf) |
 [UX micro-library](https://thescottkrause.com/emerging_tech/neodigm55_ux_library/) |
 [PWA WASM](https://www.thescottkrause.com/emerging_tech/curated-pwa-links/) |
+[DevToys](https://www.thescottkrause.com/devtoys/) |
 [Neodigm UX Wiki](https://github.com/arcanus55/neodigm55/wiki/Cheat-Sheet) | 
 [NPM](https://www.npmjs.com/~neodigm) |
 [Github](https://github.com/neodigm) |
@@ -28,9 +30,16 @@ Expanding what the web can do with features like file system access, media contr
 #
 <p align="center">
 	  <a target="_blank" href="https://www.thescottkrause.com/emerging_tech/cytoscape_dataviz_skills/">
-	  	<img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/22.webp" alt="TypeScript UX 🪐 Interactive Infographic ⚡ WASM ✨ PWA 🍭 Svelte Interactive Infographic">
+	  	<img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/22.webp" alt="TypeScript UX 🪐 Interactive Infographic ⚡ WASM ✨ PWA 🍭 Svelte">
 	  </a>
 </p>
+
+<p align="center">
+  <a target="_blank" href="https://www.thescottkrause.com">
+    <img src="https://neodigm.github.io/pan-fried-monkey-fisticuffs/thescottkrause_contact_card.png" title="UX PWA TypeScript ⚡ WASM ✨ Vue.js 🍭 ThreeJS 🌶️ HTMLX" alt="Interactive Infographic">
+  </a>
+</p>
+
 
 <p align="center">
   <a target="_blank" href="https://www.thescottkrause.com">
