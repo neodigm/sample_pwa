@@ -3,6 +3,7 @@ Simple Workbox PWA
 
 DataVis 👁️ UX 🍭 PWA 👁️ ThreeJS ✨ Vue  🚀 Svelte ✨ Cypress && JavaScript && TypeScript && Vue.js 🪐
 Infographics UX PWA Typescript Svelte ThreeJS Vue ✨htmlx
+🏖️ Inspired Problem Solver 🚀 Visual Storyteller 
 
 The Progressive Web App represents the single greatest leap in engagement opportunity since the introduction of the browser. Because of its intimate relationship with the phone the potential to influence the [micro-moment behavior](https://www.thescottkrause.com/categories/pwa/) of its user is vast and largely unexplored.
 
@@ -36,13 +37,6 @@ Expanding what the web can do with features like file system access, media contr
 
 <p align="center">
   <a target="_blank" href="https://www.thescottkrause.com">
-    <img src="https://neodigm.github.io/pan-fried-monkey-fisticuffs/thescottkrause_contact_card.png" title="UX PWA TypeScript ⚡ WASM ✨ Vue.js 🍭 ThreeJS 🌶️ HTMLX" alt="Interactive Infographic">
-  </a>
-</p>
-
-
-<p align="center">
-  <a target="_blank" href="https://www.thescottkrause.com">
-    <img src="https://neodigm.github.io/pan-fried-monkey-fisticuffs/thescottkrause_contact_card.png" title="UX PWA TypeScript ⚡ WASM ✨ Vue.js 🍭 ThreeJS" alt="Interactive Infographic">
+    <img src="https://neodigm.github.io/pan-fried-monkey-fisticuffs/thescottkrause_contact_card.png" title="UX PWA TypeScript ⚡ WASM ✨ Vue.js 🍭 ThreeJS 🌶️ HTMLX" alt="Interactive Infographic 🏖️ Inspired Problem Solver 🚀 Visual Storyteller ">
   </a>
 </p>
